@@ -1,0 +1,101 @@
+<div class="outer-container">
+    <div class="container">
+        <div class="card">
+            <h2>01</h2>
+            <p><img src="/public/wellness-02.svg" alt="Heart Icon"></p>
+            <h3>Das Produkt</h3>
+            <a href="#">Mehr erfahren</a>
+        </div>
+        <div class="card">
+            <h2>02</h2>
+            <p><img src="/public/education-02.svg" alt="Drop Icon"></p>
+            <h3>Das Produkt</h3>
+            <a href="#">Mehr erfahren</a>
+        </div>
+        <div class="card">
+            <h2>03</h2>
+            <p><img src="/public/commitment-02.svg" alt="Bulb Icon"></p>
+            <h3>Das Produkt</h3>
+            <a href="#">Mehr erfahren</a>
+        </div>
+        <div class="card">
+            <h2>04</h2>
+            <p><img src="/public/wellness-02.svg" alt="Bulb Icon"></p>
+            <h3>Das Produkt</h3>
+            <a href="#">Mehr erfahren</a>
+        </div>
+        <div class="card">
+            <h2>05</h2>
+            <p><img src="/public/education-02.svg" alt="Bulb Icon"></p>
+            <h3>Das Produkt</h3>
+            <a href="#">Mehr erfahren</a>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        /* font-family: Arial, sans-serif; */
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .container {
+        display: flex;
+        overflow-x: auto;
+        padding-left: 10%;
+    }
+    .card {
+        /* flex: 0 0 20vw; */
+        margin: 10px;
+        padding: 50px;
+        background-color: #d3c6b7;
+        border-radius: 10px;
+        text-align: center;
+        color: white;
+        justify-content: space-between;
+    }
+    .card h2, .card p {
+        margin: 10px 0;
+        color: white;
+    }
+    .card a {
+        color: white;
+        text-decoration: none;
+        border-bottom: 1px solid white;
+    }
+    .card a:hover {
+        color: #555;
+        border-bottom: 1px solid #555;
+    }
+    h3 {
+        color: white;
+        font-family: "Inria Serif", serif;
+        font-size: 5vh;
+        padding-bottom: 2vh;
+    }
+    .card p img {
+    width: 70%;
+    height: 30vh; 
+    display: block;
+    margin: 0 auto;
+    color: white;
+    }
+
+    @media (max-width: 720px) {
+        .outer-container {
+            width: 100%;
+        }
+        .card {
+            height: 100%;
+        }
+        .card p img {
+            height: 20vh;
+        }
+    }
+    @media (min-width: 720px) {
+        .outer-container {
+            display: none;
+        }
+    }
+</style>

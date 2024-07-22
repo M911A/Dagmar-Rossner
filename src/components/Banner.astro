@@ -1,0 +1,57 @@
+<div class="container">
+    <img class="banner" src="/public/banner kopie.png">
+    <div class="text-overlay">
+        <span class="smal-text">Dr. Dagmar Roßner</span><br>
+        <span class="huge-text">...für das Wohl der Frau</span>
+    </div>
+</div>
+
+<style>
+    .container {
+        position: relative;
+        display: inline-block; /* Ensure the container fits the size of the image */
+    }
+
+    .banner {
+        border-radius: 0;
+        display: block; /* Remove any inline spacing */
+    }
+
+    .text-overlay {
+        position: absolute;
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); /* Center the text */
+        text-align: center; /* Center-align the text */
+        color: white; 
+        padding: 10px;
+    }
+
+    .smal-text, .huge-text {
+        font-family: "Inria Serif", serif;
+        color: white;
+        display: block;
+    }
+
+    .smal-text {
+
+        font-size: 3vw; /* Adjust based on viewport width */
+        margin-top: 3vw; /* Adjust this value to change the space between the texts */
+    }
+
+    .huge-text {
+        font-size: 5vw; /* Adjust based on viewport width */
+    }
+
+    @media (max-width: 720px) {
+        .container {
+            width: 100%;
+        }
+        .text-overlay {
+            margin-top: 4.5vh;
+        }
+        .smal-text, .huge-text {
+            display: none;
+        }
+    }
+</style>

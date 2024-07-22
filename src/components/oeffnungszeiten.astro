@@ -1,0 +1,105 @@
+<div class="container">
+    <div class="left">
+        <img src="/public/Team.png" class="bottom-image">
+    </div>
+    <div class="right">
+        <div class="zeiten">
+            <a class="header-serif">Öffnungszeiten</a>
+            <a class="header-serif-mobile">Öffnungszeiten</a>
+            <div class="time-row">
+                <span>Montag</span>
+                <span>08:00-12:00</span>
+            </div>
+            <div class="time-row">
+                <span>Dienstag</span>
+                <span>08:00-12:00, 14:00-18:00</span>
+            </div>
+            <div class="time-row">
+                <span>Mittwoch</span>
+                <span>08:00-12:00</span>
+            </div>
+            <div class="time-row">
+                <span>Donnerstag</span>
+                <span>08:00-12:00, 14:00-18:00</span>
+            </div>
+            <div class="time-row">
+                <span>Freitag</span>
+                <span>08:00-12:00</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .container {
+        display: flex;
+        height: 60vh;
+        flex-direction: row;
+    }
+    .left {
+        width: 60%;
+        display: flex;
+        align-items: flex-end;
+        background-color: var(--accent);
+        justify-content: center; 
+    }
+    .right {
+        width: 40%;
+        /* background-color: aquamarine; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .zeiten {
+        background-color: white;
+        padding: 3%;
+        margin-bottom: 2.5%;
+        height: 40vh;
+        border-radius: 5px;
+        /* font-size: 25px; */
+    }
+    .time-row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 2px;
+    }
+    .time-row span {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .bottom-image {
+        max-width: 100%; /
+        height: auto; 
+    }
+    .header-serif-mobile {
+        display: none;
+    }
+    .header-serif {
+        color: black;
+        padding-left: 10px;
+    }
+
+    @media (max-width: 1200px) {
+        .container {
+            flex-direction: column;
+            width: 100%;
+            /* background-color: blueviolet; */
+        }
+        .left {
+            width: 100%;
+            margin-bottom: 5vh;
+        }
+        .right {
+            width: 100%;
+            height: 27vh;
+        }
+        .header-serif-mobile {
+            display: contents;
+        }
+        .header-serif {
+            display: none;
+        }
+    }
+</style>

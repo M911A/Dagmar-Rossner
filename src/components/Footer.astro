@@ -1,0 +1,61 @@
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-line left"></div><br>
+        <div class="footer-line short left" style="top: calc(50% + 5px);"></div>
+        <img src="/public/logo.png" alt="Logo">
+        <div class="footer-line short right" style="top: calc(50% + 5px);"></div>
+        <div class="footer-line right"></div>
+    </div>
+    <div class="footer-link">
+        <a href="#">Impressum</a>
+        <a style="text-decoration: none;" href="#">&</a>
+        <a href="#">Datenschutz</a>
+    </div>
+</footer>
+
+    <style>
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footer-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            width: 100%;
+        }
+        .footer-line {
+            position: absolute;
+            width: 40%;
+            border-top: 3px solid #B5A89F; /* Adjust color to match the brown line */
+            top: 50%;
+            border-radius: 10px;
+        }
+        .footer-line.short {
+            width: 30%;
+        }
+        .footer-line.left {
+            left: 0;
+        }
+        .footer-line.right {
+            right: 0;
+        }
+        .footer-content img {
+            height: 80px;
+            z-index: 1; /* Ensures the logo is above the lines */
+            background-color: white; /* Ensures the logo background matches the page background */
+            padding: 0 10px; /* Optional: adjust padding to taste */
+        }
+        .footer-link {
+            text-align: center;
+            margin-top: 10px;
+            color: black;
+        }
+        .footer-link a {
+            color: black;
+            font-weight: 100;
+            font-size: 15pt;
+        }
+    </style>

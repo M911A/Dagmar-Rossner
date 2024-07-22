@@ -1,0 +1,144 @@
+<div class="container">
+    <div class="upper-section">
+        <img class="logo" src="/public/logo.png">
+        <p class="header-serif">Dagmar Roßner - Die Praxis für Frauen</p>
+        <div class="header-serif-mobile">
+            <p class="header-serif-mobile">Dagmar Roßner</p>
+            <!-- <br> -->
+            <p class="header-serif-mobile">Die Praxis für Frauen</p>
+        </div>
+        <p class="text-block">Die Praxis-Schwerpunkte liegen auf der Vorbeugung, Diagnose und Behandlung von speziellen 
+            Erkrankungen der Frau. Außerdem betreut der Frauenarzt Schwangere, überwacht Geburten 
+            und den Verlauf im Wochenbett.
+        </p>
+        </p>
+    </div>
+
+    <hr class="h-line">
+
+    <div class="lower-section">
+        <div class="left">
+            <img class="portrait" src="/public/portrait.png">
+        </div>
+        <div class="right">
+            <p class="header-serif">Das bin ich</p>
+            <p class="header-serif-mobile">Das bin ich</p>
+            <p class="inofmation-text">Donaldson Plastic Surgery and Donaldson Health address the complex issues underlying appearance and wellness.
+                We are with you every step of the way — with confidence and reassurance from the first conversation until we help achieve your goals.</p>
+        </div>
+    </div>
+</div>
+
+<style>
+
+    .header-serif-mobile {
+        display: none;
+    }
+    .header-serif {
+        display: contents;
+    }
+    .upper-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 120px;
+        height: 100px;
+    }
+
+    .text-block {
+        width: 70vw;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .lower-section {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .left {
+        background-color: var(--accent);
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        margin-right: 30px;
+    }
+
+    .portrait {
+        margin-top: 10vh;
+    }
+
+    .right {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .inofmation-text {
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+
+    .h-line {
+    border: none;
+    border-top: 3px solid var(--accent);
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    width: 70%; 
+    margin: 10vh 0; 
+    }
+
+    @media (max-width: 720px) {
+        .container {
+            width: 100%;
+        }
+        .logo {
+            height: auto;
+            width: 10vh;
+        }
+        .header-serif-mobile {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            p {
+                margin-top: 0.5vh;
+            }
+        }
+        .header-serif {
+            display: none;
+        }
+        .text-block {
+            margin-top: 3vh;
+        }
+        .left {
+            width: 100%;
+            height: 50vh;
+            margin-bottom: 5vh;
+        }
+        .portrait {
+            height: auto;
+            width: 50vw;
+        }
+        .lower-section {
+            display: flex;
+            flex-direction: column;
+        }
+        .right {
+            width: 100%;
+        }
+    }
+    @media (max-width: 400px) {
+        .portrait {
+            height: auto;
+            width: 40vw;
+        }
+    }
+</style>

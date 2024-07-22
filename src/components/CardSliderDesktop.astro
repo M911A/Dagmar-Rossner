@@ -1,0 +1,144 @@
+<div class="outer-container">
+    <div class="container">
+        <div class="card">
+            <h2>01</h2>
+            <p><img src="/public/wellness-02.svg" alt="Heart Icon"></p>
+            <h3>Das Produkt</h3>
+            <a href="#">Mehr erfahren</a>
+        </div>
+        <div class="card">
+            <h2>02</h2>
+            <p><img src="/public/education-02.svg" alt="Drop Icon"></p>
+            <h3>Das Produkt</h3>
+            <a href="#">Mehr erfahren</a>
+        </div>
+        <div class="card">
+            <h2>03</h2>
+            <p><img src="/public/commitment-02.svg" alt="Bulb Icon"></p>
+            <h3>Das Produkt</h3>
+            <a href="#">Mehr erfahren</a>
+        </div>
+        <div class="card">
+            <h2>04</h2>
+            <p><img src="/public/wellness-02.svg" alt="Bulb Icon"></p>
+            <h3>Das Produkt</h3>
+            <a href="#">Mehr erfahren</a>
+        </div>
+        <!-- <div class="card">
+            <h2>05</h2>
+            <p><img src="/public/education-02.svg" alt="Bulb Icon"></p>
+            <h3>Das Produkt</h3>
+            <a href="#">Mehr erfahren</a>
+        </div>
+        <div class="card">
+            <h2>06</h2>
+            <p><img src="/public/education-02.svg" alt="Bulb Icon"></p>
+            <h3>Das Produkt</h3>
+            <a href="#">Mehr erfahren</a>
+        </div> -->
+        <a class="read-more" href="/blog">Zum gesamten Angebot</a>
+    </div>
+</div>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .outer-container {
+        padding: 10px;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .card {
+        width: 300px;
+        margin: 10px;
+        padding: 20px;
+        background-color: #d3c6b7;
+        border-radius: 5px;
+        text-align: center;
+        color: white;
+        box-sizing: border-box;
+    }
+
+    .card h2, .card p {
+        margin: 10px 0;
+        color: white;
+    }
+
+    .card a {
+        color: white;
+        text-decoration: none;
+        border-bottom: 1px solid white;
+    }
+
+    .card a:hover {
+        color: #555;
+        border-bottom: 1px solid #555;
+    }
+
+    h3 {
+        color: white;
+        font-family: "Inria Serif", serif;
+        font-size: 5vh;
+        padding-bottom: 2vh;
+    }
+
+    .card p img {
+        width: 70%;
+        height: 30vh; 
+        display: block;
+        margin: 0 auto;
+    }
+
+    .read-more {
+        display: inline-block;
+        padding: 10px 20px;
+        color: white;
+        font-weight: 200;
+        text-decoration: none;
+        background-color: var(--accent); /* Akzentfarbe */
+        border-radius: 25px;
+        overflow: hidden;
+        transition: background-color 0.4s, color 0.4s;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .read-more:hover {
+        background-color: #555; /* Dunklere Akzentfarbe beim Hover */
+        color: white; /* Textfarbe beim Hover */
+    }
+
+    @media (max-width: 720px) {
+        .outer-container {
+            width: 100%;
+            display: none;
+        }
+
+        .container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card {
+            width: 100%;
+            height: auto;
+            padding: 10px;
+        }
+
+        .card p img {
+            height: 20vh;
+        }
+    }
+</style>

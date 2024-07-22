@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="left">
+        <a class="header-serif">Inkontinenz - Emsella</a>
+        <a class="header-serif-mobile">Inkontinenz - Emsella</a>
+        <p>Donaldson Plastic Surgery and Donaldson Health address the complex issues underlying appearance and wellness. We provide one-on-one attention to make sure we understand each other. 
+        </p>
+    </div>
+    <div class="right">
+        <img src="/public/emsella.webp">
+    </div>
+</div>
+
+<style>
+    .container {
+        width: 90%;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: row;
+    }
+    .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 40%;
+        margin-left: 5%;
+        margin-right: 5%;
+        a {
+            color: black;
+            font-weight: 400;
+        }
+    }
+    .right {
+        width: 60%;
+    }
+    .header-serif {
+        font-weight: 200 !important;
+    }
+    .header-serif-mobile {
+        display: none;
+    }
+    @media (max-width: 720px){
+        .container {
+            flex-direction: column;
+        }
+        .left {
+            width: 90%;
+        }
+        .header-serif {
+            display: none;
+        }
+        .header-serif-mobile {
+            display: contents;
+        }
+        .right {
+            margin-top: 2vh;
+            width: 100%;
+        }
+    }
+</style>

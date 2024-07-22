@@ -1,0 +1,57 @@
+<div class="container">
+    <div class="text-container">
+        <p class="header-serif">Für Ihr Wohlbefinden Emsella</p>
+    </div>
+    <span class="dot-white"></span>
+    <span class="dot"></span>
+    
+    
+</div>
+
+<style>
+    .container {
+        width: 90%;
+        margin-left: 5%;
+        height: 50vh;
+        /* background-color: aqua; */
+        color: white;
+        display: flex;
+        align-items: center;  
+    }
+    .container p {
+        color: black;
+    }
+    .l-r {
+        display: flex;
+        flex-direction: row;
+    }
+    .text-container {
+        width: 70%;
+        height: 40vh;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--accent);
+    }
+    .text-container p {
+        padding-top: 15%;
+    }
+    .dot{
+        height: 40vh;
+        width: 40vh;
+        margin-left: -60px;
+        background-color: var(--accent);
+        border-radius: 50%;
+        display: inline-block;
+        z-index: 1;
+    }
+    .dot-white {
+        z-index: 0;
+        height: 45vh;
+        width: 45vh;
+        margin-left: 55%;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+    }
+</style>
