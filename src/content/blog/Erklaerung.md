@@ -11,7 +11,7 @@ Wie kannst du hier mit wenige Programmierkenntnis deine Texte einpflegen und bea
 
 # H1 (zu groß)
 
-## H2 kaputt warum auch immer (müsste größer sein)
+## H2
 
 ### H3
 
