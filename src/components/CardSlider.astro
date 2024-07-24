@@ -3,7 +3,7 @@
         <div class="card">
             <h2>01</h2>
             <p><img src="/wellness-02.svg" alt="Heart Icon"></p>
-            <h3>Das Produkt</h3>
+            <h3>Schwangerschaft</h3>
             <a href="#">Mehr erfahren</a>
         </div>
         <div class="card">
@@ -39,6 +39,9 @@
         margin: 0;
         padding: 0;
         overflow-x: hidden;
+        word-wrap: break-word;
+	    overflow-wrap: break-word;
+        hyphens: auto;
     }
     .container {
         display: flex;
@@ -53,6 +56,7 @@
         border-radius: 10px;
         text-align: center;
         color: white;
+        min-width: 50vw ;
         justify-content: space-between;
     }
     .card h2, .card p {
@@ -82,7 +86,7 @@
     color: white;
     }
 
-    @media (max-width: 720px) {
+    @media (max-width: 1050px) {
         .outer-container {
             width: 100%;
         }
@@ -93,7 +97,7 @@
             height: 20vh;
         }
     }
-    @media (min-width: 720px) {
+    @media (min-width: 1050px) {
         .outer-container {
             display: none;
         }

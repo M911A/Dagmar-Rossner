@@ -94,7 +94,7 @@
 .header-serif-mobile {
 	font-family: "Inria Serif", serif;
 	font-size: 3vh;
-	font-weight: 200;
+	font-weight: 600;
 	margin-top: -10px;
 	margin-bottom: -10px;
 }
@@ -112,6 +112,7 @@ body {
 	font-size: 20pt;
 	font-weight: 200;
 	line-height: 1.7;
+
 }
 main {
 	width: 720px;
