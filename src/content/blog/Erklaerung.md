@@ -1,7 +1,7 @@
 ---
-title: 'Laserbehandlung'
+title: 'Erklärung!'
 description: 'Vorsorge für Ihr Wohl'
-pubDate: 'Jul 03 2024'
+pubDate: 'Jul 03 2000'
 heroImage: '/laser.webp'
 ---
 
