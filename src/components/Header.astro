@@ -7,13 +7,13 @@ import { SITE_TITLE } from '../consts';
     <nav>
         <div class="internal-links links-left">
             <HeaderLink href="/">HOME</HeaderLink>
-            <HeaderLink href="/blog">ÜBER MICH</HeaderLink>
+            <HeaderLink href="/about">ÜBER MICH</HeaderLink>
         </div>
         <div class="logo">
             <img src="/logo.png">
         </div>
         <div class="internal-links links-right">
-            <HeaderLink href="/about">ANGEBOT</HeaderLink>
+            <HeaderLink href="/blog">ANGEBOT</HeaderLink>
             <HeaderLink href="/about">TERMINE</HeaderLink>
         </div>
         <div class="hamburger">
@@ -24,9 +24,9 @@ import { SITE_TITLE } from '../consts';
     </nav>
     <div class="mobile-menu"><br>
         <HeaderLink href="/">HOME</HeaderLink>
-        <HeaderLink href="/blog">ÜBER MICH</HeaderLink>
-        <HeaderLink href="/about">ANGEBOT</HeaderLink>
-        <HeaderLink href="/about">TERMINE</HeaderLink><br><br><br>
+        <HeaderLink href="/about">ÜBER MICH</HeaderLink>
+        <HeaderLink href="/blog">ANGEBOT</HeaderLink>
+        <HeaderLink href="/#">TERMINE</HeaderLink><br><br><br>
     </div>
 </header>
 
@@ -53,8 +53,8 @@ nav {
 .logo {
     display: flex;
     justify-content: center;
-    flex: 0 1 auto; /* Flexbox anpassen */
-    margin: 0 20px; /* Abstand zwischen Logo und Links */
+    flex: 0 1 auto; 
+    margin: 0 20px; 
 }
 
 .logo img {
@@ -73,7 +73,7 @@ nav a {
 nav a.active {
     text-decoration: none;
     border-bottom-color: var(--accent);
-    color: var(--accent); /* Add this line to change color */
+    color: var(--accent); 
 }
 
 nav a::before {
@@ -123,7 +123,6 @@ nav a:hover::before {
 .hamburger.open .bar:nth-child(3) {
     transform: rotate(-45deg);
     top: -14px;
-    /* left: -4px; */
     position: relative;
 }
 
@@ -170,26 +169,21 @@ nav a:hover::before {
     nav {
         display: flex;
         justify-content: space-between;
-        /* padding-left: 5%; */
         padding-right: 5%;
     }
     .hamburger {
         margin-right: 0px;
         display: flex;
-        /* order: 2; */
-        /* margin-left: 80%; */
     }
     .logo {
         margin-left: 0px;
-        /* order: 1; */
-        /* margin-left: 10%; */
     }
     .mobile-menu a {
         color: black;
     }
     .mobile-menu a.active {
-        color: var(--accent) !important; /* Ensure active link color */
-        text-decoration: none; /* Remove underline */
+        color: var(--accent) !important;
+        text-decoration: none;
     }
 }
 

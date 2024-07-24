@@ -19,21 +19,18 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				max-width: 100%;
 				margin: 0;
 				font-family: "Inria Sans", sans-serif;
-				/* background-color: aqua; */
 			}
 			article {
 				margin-top: -2%;
-				/* background-color: aqua; */
 			}
 			.hero-image {
 				width: 100%;
-				/* height: 40vh; */
 			}
 			.hero-image img {
 				display: block;
 				margin: 0 auto;
 				border-radius: 12px;
-				box-shadow: var(--box-shadow);
+				box-shadow:  20px 10px 20px 10px var(--box-shadow);
 			}
 			.prose {
 				width: 720px;
@@ -44,12 +41,16 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			}
 			.title {
 				margin-bottom: 1em;
-				/* padding: 1em 0; */
 				text-align: center;
 				line-height: 1;
 				font-family: "Inria Serif", serif;
-				font-size: 3vw;
+				font-size: 2vw;
 				font-weight: 200;
+			}
+			@media (max-width: 720px) {
+				.title {
+					font-size: 3vw;
+				}
 			}
 			.title h1 {
 				margin: 0 0 0 0;
@@ -62,6 +63,12 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			.last-updated-on {
 				font-style: italic;
 			}
+			hr {
+				border: 0; 
+				height: 2px;
+				background-color: var(--accent); 
+			}
+
 		</style>
 	</head>
 
