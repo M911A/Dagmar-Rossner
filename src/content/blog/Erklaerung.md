@@ -40,7 +40,7 @@ Dahinter in () den Namen mit Dateiendung schreiben. Wichig, davor '/'.
 
 #### Dann wird das Bild so eingefügt:
 
-![blog placeholder](/public/logo.png)
+![blog placeholder](/logo.png)
 
 ### Tabellen:
 

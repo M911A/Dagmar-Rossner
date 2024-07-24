@@ -12,12 +12,15 @@ const posts = (await getCollection('blog')).sort(
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="de">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
 			main {
 				width: 960px;
+			}
+			h2 {
+				display: none;
 			}
 			ul {
 				display: flex;
@@ -97,12 +100,20 @@ const posts = (await getCollection('blog')).sort(
 				ul li .title {
 					font-size: 1.563em;
 				}
+				h2 {
+					display: contents;
+					display: flex;
+					justify-content: center;
+					margin-bottom: 5vh;
+					margin-top: -5vh;
+				}
 			}
 		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
+			<h2>Angebot</h2>
 			<section>
 				<ul>
 					{
