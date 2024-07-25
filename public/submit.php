@@ -22,12 +22,17 @@ try {
     $mail->setFrom('mika.griebsch@gmail.com', 'Mika Griebsch');
     $mail->addAddress('mika.griebsch.schule@gmail.com');
 
+    // Formulardaten verarbeiten
+    $date = isset($_POST['date']) ? htmlspecialchars($_POST['date']) : 'Nicht angegeben';
+    $time = isset($_POST['time']) ? htmlspecialchars($_POST['time']) : 'Nicht angegeben';
+
+    // E-Mail-Inhalt
     $mail->isHTML(false);
-    $mail->Subject = 'Test E-Mail';
-    $mail->Body    = 'Dies ist eine Test-E-Mail.';
+    $mail->Subject = 'Neuer Termin';
+    $mail->Body    = "Datum: $date\nZeit: $time";
 
     $mail->send();
-    echo 'Test-E-Mail wurde erfolgreich gesendet.';
+    echo 'Die E-Mail wurde erfolgreich gesendet.';
 } catch (Exception $e) {
     echo "Fehler beim Senden der E-Mail: {$mail->ErrorInfo}";
 }
