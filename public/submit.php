@@ -2,12 +2,12 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $date = $_POST['date'];
     $time = $_POST['time'];
-    $email = $_POST['email'];
+    $email = 'mika.griebsch@gmail.com';
 
     // Überprüfen, ob die Felder nicht leer sind
     if (!empty($date) && !empty($time) && !empty($email)) {
         // E-Mail senden
-        $to = 'mika.griebsch@gmail.com'; // Deine E-Mail-Adresse
+        $to = 'mika.griebsch.schule@gmail.com'; // Deine E-Mail-Adresse
         $subject = 'Neue Terminbuchung';
         $message = "Datum: $date\nZeit: $time\nE-Mail: $email";
         $headers = 'From: ' . $email . "\r\n" .
