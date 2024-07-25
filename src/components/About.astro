@@ -141,4 +141,34 @@
             width: 40vw;
         }
     }
+    .left {
+        opacity: 0;
+    }
+
 </style>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const options = {
+            root: null, 
+            rootMargin: '0px',
+            threshold: 0.3 //Animationsschwelle 
+        };
+    
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-slide-in-left');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+    
+        const target = document.querySelector('.left');
+        if (target) {
+            observer.observe(target);
+        }
+    });
+</script>
+    

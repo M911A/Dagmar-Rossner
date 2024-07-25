@@ -2,11 +2,10 @@
     <div class="left">
         <a class="header-serif">Inkontinenz - Emsella</a>
         <a class="header-serif-mobile">Inkontinenz - Emsella</a>
-        <p>Donaldson Plastic Surgery and Donaldson Health address the complex issues underlying appearance and wellness. We provide one-on-one attention to make sure we understand each other. 
-        </p>
+        <p>Donaldson Plastic Surgery and Donaldson Health address the complex issues underlying appearance and wellness. We provide one-on-one attention to make sure we understand each other. </p>
     </div>
-    <div class="right">
-        <img src="/emsella.webp">
+    <div class="right-emsella">
+        <img src="/emsella.webp" alt="Emsella">
     </div>
 </div>
 
@@ -24,13 +23,11 @@
         width: 40%;
         margin-left: 5%;
         margin-right: 5%;
-        a {
-            color: black;
-            font-weight: 400;
-        }
     }
-    .right {
+    .right-emsella {
         width: 60%;
+        opacity: 0;
+        transition: opacity 1.5s ease;
     }
     .header-serif {
         font-weight: 200 !important;
@@ -52,9 +49,33 @@
             display: contents;
             font-weight: 600 !important;
         }
-        .right {
+        .right-emsella {
             margin-top: 2vh;
             width: 100%;
         }
     }
 </style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.3
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-slide-in-right');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+
+        const target = document.querySelector('.right-emsella');
+        if (target) {
+            observer.observe(target);
+        }
+    });
+</script>
