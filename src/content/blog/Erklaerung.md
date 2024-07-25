@@ -33,7 +33,7 @@ Absatz 3
 #### Syntax
 
 ```markdown
-![Alt text](./full/or/relative/path/of/image)
+![Alt text](.logo.AVIF)
 ```
 Für 'Alt' eine kurze Bildbeschreibung einfügen, die angezeigt wird, wenn das Bild aus unterschiedlichen Gründen nicht geladen werden kann. 
 Dahinter in () den Namen mit Dateiendung schreiben. Wichig, davor '/'.
