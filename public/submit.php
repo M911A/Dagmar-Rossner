@@ -15,7 +15,7 @@ try {
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
     $mail->Username   = 'mika.griebsch@gmail.com';
-    $mail->Password   = 'pjxt swjn vbdj hcug'; // Dein App-spezifisches Passwort
+    $mail->Password   = 'pjxt swjn vbdj hcug'; // Dein App-spezifisches Passwort!
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
 
