@@ -114,7 +114,9 @@ body {
 	font-weight: 200;
 	line-height: 1.7;
 	hyphens: auto;
-
+}
+::selection {
+	background-color: var(--accent);
 }
 main {
 	width: 720px;

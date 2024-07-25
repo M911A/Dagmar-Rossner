@@ -2,5 +2,5 @@
 title: 'Vorsorge'
 description: 'Vorsorge für Ihr Wohl'
 pubDate: 'Jul 01 2020'
-heroImage: '/banner.png'
+heroImage: '/banner.AVIF'
 ---
