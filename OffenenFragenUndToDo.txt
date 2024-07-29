@@ -1,0 +1,28 @@
+Domain
+    - Hostinger (3,99-4,99)
+    - verglichen zu den adnern Anbitern Preis-Leistung am besten
+
+Email
+    - wenn noch nicht vorhanden, dann benötigt
+    - Gmail buissines Konto ?!
+    - Maps Anschluss 
+
+Maps 
+    - erstellen eines Unternehmens bei Maps 
+        - wie binde ich eine Websie bei Maps ein
+
+Website Email-Versenden um für Terminanfragen 
+    - Termine könnten mit Enstprechendemem Hostinganbieter versendet werden 
+        - soll das?  
+        - (SendGrit)
+    
+Hosting Anbieter
+    - kommt drauf an welcher
+        --> kann dann kostenlos bleiben 
+        - Render, Netlify
+
+Pc-Einrichten 
+    - Email mit Postfach und enstprechendemem Hosting Account, etc. erstellen
+    - VS-Code runter laden und Einrichten
+        - erklären 
+
