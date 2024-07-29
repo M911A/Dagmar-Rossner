@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import LeftLine from '../components/h-line-left.astro';
 import RightLine from '../components/h-line-rigth.astro';
+import CenterLine from '../components/h-line-center.astro';
 
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
@@ -13,8 +14,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body>
-		<Header />
+    <Header />
+	<body class="body">
         <div class="container">
             <div class="zeiten">
                 <p class="header-serif">Öffnungszeiten</p>
@@ -46,9 +47,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
                 <p>Die Terminverhabe erfolgt telefonisch unter: 033748 15597<br>Ihr Praxisteam</p>
             </div>
         </div>
-		<RightLine />
-        <div class="container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2450.9449361523316!2d12.8735949!3d52.098933699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a886c6a6501d7f%3A0x9baa4c3cf3e3713a!2sVital%20%26%20Fitness%20Lounge%20-%20Gro%C3%9Fsport39!5e0!3m2!1sde!2sno!4v1721923697829!5m2!1sde!2sno" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <CenterLine />
+        <div class="container-map">
+            <p class="header-serif">Anreise</p>
+            <p class="header-serif-mobile">Anreise</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2450.9449361523316!2d12.8735949!3d52.098933699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a886c6a6501d7f%3A0x9baa4c3cf3e3713a!2sVital%20%26%20Fitness%20Lounge%20-%20Gro%C3%9Fsport39!5e0!3m2!1sde!2sno!4v1721923697829!5m2!1sde!2sno" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 		<LeftLine />
 
@@ -57,12 +60,13 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 </html>
 
 <style>
-    body {
+    .body {
         width: 80%;
         margin-left: 10%;
     }
     .header-serif {
-        font-weight: 400;
+        font-weight: 200;
+        color: var(--accent);
     }
     .header-serif-mobile {
         display: none;
@@ -71,18 +75,27 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         display: flex;
         flex-direction: row;
         margin-top: 5vh;
+        width: 80%;
+        margin-left: 10%;
+    }
+    .container-map {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5vh;
+        width: 80%;
+        margin-left: 10%;
     }
     .text-container {
-        /* background-color: aqua; */
         width: 50%;
-        padding-left: 3%;
-        padding-right: 3%;
+        margin-left: 2%;
+        p {
+            margin-top: -2%;
+        }
     }
     .zeiten {
         width: 50%;
         margin-bottom: 2.5%;
-        height: 40vh;
-        border-radius: 5px;
+        height: auto;
     }
     .time-row {
         display: flex;
@@ -90,9 +103,31 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         width: 100%;
         margin-bottom: 2px;
     }
-    @media (max-width: 720px) {
+    @media (max-width: 1050px) {
         .header-serif {
             display: none;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+        .container-map {
+            display: flex;
+            flex-direction: column;
+        }
+        .text-container {
+            width: 100%;
+            margin-left: 0%;
+            margin-top: 5px;
+            p {
+                margin-top: -5px;
+            }
+        }
+        .zeiten {
+            width: 100%;
+        }
+        .header-serif-mobile {
+            display: contents;
         }
     }
 
