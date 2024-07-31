@@ -5,7 +5,8 @@ pubDate: 'Jul 03 2000'
 heroImage: '/laser.webp'
 ---
 
-Wie kannst du hier mit wenige Programmierkenntnis deine Texte einpflegen und bearbeiten.
+Wie kannst du hier mit wenige Programmierkenntnis deine Texte einpflegen und bearbeiten. (Dazu muss ich dir den Code noch zeigen und dir einen Zugang geben!)
+Wenn wir drüber gesprochen haben, dann sollte das kein Porblem sein :)
 
 ### Überschriften:
 
