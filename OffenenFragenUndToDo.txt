@@ -26,3 +26,6 @@ Pc-Einrichten
     - VS-Code runter laden und Einrichten
         - erklären 
 
+Git - für Commits
+    git config --global user.name "Ihr Name"
+    git config --global user.email "ihre.email@example.com"
