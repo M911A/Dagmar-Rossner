@@ -13,6 +13,7 @@ import Emsella from '../components/Emsella.astro';
 import Emsella2 from '../components/Emsella2.astro';
 import Oeffnungszeiten from '../components/oeffnungszeiten.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import Map from '../components/Map.astro';
 ---
 
 <!doctype html>
@@ -27,14 +28,14 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<RightLine />
 		<Vorsorge />
 		<LeftLine />
+		<Oeffnungszeiten />
+		<RightLine />
+		<Map />
+		<LeftLine />
 		<Slider />
 		<SliderDesktop />
 		<RightLine />
-		<!-- <Emsella /> -->
 		<Emsella2 />
-		<LeftLine />
-		<Oeffnungszeiten />
-		<!-- <RightLine /> -->
 		<Footer />
 	</body>
 </html>
