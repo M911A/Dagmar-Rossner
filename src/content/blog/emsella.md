@@ -1,6 +1,6 @@
 ---
-title: 'Emsella'
+title: 'Beckenbodentraining'
 description: 'Vorsorge für Ihr Wohl'
-pubDate: 'Jul 01 2022'
-heroImage: '/emsella.webp'
+pubDate: 'Jul 09 2000'
+heroImage: '/Emsella.png'
 ---

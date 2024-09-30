@@ -3,25 +3,31 @@
         <div class="card">
             <h2>01</h2>
             <p><img alt="Icon" src="/wellness-02.svg" alt="Heart Icon"></p>
-            <h3>Schwangerschaft</h3>
+            <h3>Gynäkologische Vorsorge</h3>
             <a href="#">Mehr erfahren</a>
         </div>
         <div class="card">
             <h2>02</h2>
             <p><img alt="Icon" src="/education-02.svg" alt="Drop Icon"></p>
-            <h3>Das Produkt</h3>
+            <h3>Schwangerschaftsvorsorge</h3>
             <a href="#">Mehr erfahren</a>
         </div>
         <div class="card">
             <h2>03</h2>
             <p><img alt="Icon" src="/commitment-02.svg" alt="Bulb Icon"></p>
-            <h3>Das Produkt</h3>
+            <h3>Krebsnachsorge</h3>
             <a href="#">Mehr erfahren</a>
         </div>
         <div class="card">
             <h2>04</h2>
             <p><img alt="Icon" src="/wellness-02.svg" alt="Bulb Icon"></p>
-            <h3>Das Produkt</h3>
+            <h3>Ultraschalluntersuchung</h3>
+            <a href="#">Mehr erfahren</a>
+        </div>
+        <div class="card">
+            <h2>05</h2>
+            <p><img alt="Icon" src="/wellness-02.svg" alt="Bulb Icon"></p>
+            <h3>Laboruntersuchung</h3>
             <a href="#">Mehr erfahren</a>
         </div>
         <!-- <div class="card">
@@ -36,6 +42,8 @@
             <h3>Das Produkt</h3>
             <a href="#">Mehr erfahren</a>
         </div> -->
+    </div>
+    <div class="read-more-div">
         <a class="read-more" href="/blog">Zum gesamten Angebot</a>
     </div>
 </div>
@@ -60,7 +68,7 @@
     }
 
     .card {
-        width: 300px;
+        width: 350px;
         margin: 10px;
         padding: 20px;
         background-color: #d3c6b7;
@@ -99,6 +107,11 @@
         display: block;
         margin: 0 auto;
     }
+    .read-more-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 
     .read-more {
         display: inline-block;
@@ -110,8 +123,10 @@
         border-radius: 25px;
         overflow: hidden;
         height: 40px;
+        width: 300px;
         display: flex;
         align-items: center;
+        justify-content: center;
         transition: background-color 0.4s, color 0.4s;
         font-size: 1.25rem;
         text-transform: uppercase;
