@@ -1,6 +1,6 @@
 ---
-title: 'Brustulraschall'
+title: 'Brustuntersuchung'
 description: 'Vorsorge für Ihr Wohl'
 pubDate: 'Jul 05 2000'
-heroImage: '/Brust.png'
+heroImage: '/BrustKrebs.JPG'
 ---
