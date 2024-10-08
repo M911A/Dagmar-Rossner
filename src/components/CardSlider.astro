@@ -3,105 +3,127 @@
         <div class="card">
             <h2>01</h2>
             <p><img alt="Icon" src="/wellness-02.svg" alt="Heart Icon"></p>
-            <h3>Schwangerschaft</h3>
-            <a href="#">Mehr erfahren</a>
+            <h3>generelle Vorsorge</h3>
+            <a href="/blog/gyn">Mehr erfahren</a>
         </div>
         <div class="card">
             <h2>02</h2>
             <p><img alt="Icon" src="/education-02.svg" alt="Drop Icon"></p>
-            <h3>Das Produkt</h3>
-            <a href="#">Mehr erfahren</a>
+            <h3>Schwangerschaft</h3>
+            <a href="/blog/schwangerschaft">Mehr erfahren</a>
         </div>
         <div class="card">
             <h2>03</h2>
             <p><img alt="Icon" src="/commitment-02.svg" alt="Bulb Icon"></p>
-            <h3>Das Produkt</h3>
-            <a href="#">Mehr erfahren</a>
+            <h3>Krebsnachsorge</h3>
+            <a href="/blog/krebsnachsorge">Mehr erfahren</a>
         </div>
         <div class="card">
             <h2>04</h2>
             <p><img alt="Icon" src="/wellness-02.svg" alt="Bulb Icon"></p>
-            <h3>Das Produkt</h3>
-            <a href="#">Mehr erfahren</a>
+            <h3>Ultraschall</h3>
+            <a href="/blog/ultraschall">Mehr erfahren</a>
         </div>
         <div class="card">
             <h2>05</h2>
             <p><img alt="Icon" src="/education-02.svg" alt="Bulb Icon"></p>
-            <h3>Das Produkt</h3>
-            <a href="#">Mehr erfahren</a>
+            <h3>Brustuntersuchung</h3>
+            <a href="/blog/brustuntersuchung">Mehr erfahren</a>
+        </div>
+        <div class="card more">
+            <a href="/blog" ><img class="arrow" alt="Read More Button" src="/arrow.svg"></a>
+            <a class="read-more" href="/blog">Mehr erfahren</a>
         </div>
     </div>
 </div>
 
 <style>
-    body {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        hyphens: auto;
-    }
-    .container {
+    .more {
+        margin-left: -10% !important;
         display: flex;
-        overflow-x: auto;
-        padding-left: 10%;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center;
+        background-color: var(--background) !important;
+        color: var(--accent);
+        a {
+            color: var(--accent) !important;
+            font-size: 30px !important;
+            text-decoration: underline;
+        }
+    }
+    body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+.container {
+    display: flex;
+    overflow-x: auto;
+    padding-left: 5%;
+}
+.card {
+    margin: 10px;
+    padding: 50px;
+    background-color: #d3c6b7;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    min-width: 58vw;
+    min-height: 50vh;
+    justify-content: space-between;
+    hyphens: auto;
+}
+
+.card h2, .card p {
+    margin: 10px 0;
+    color: white;
+    hyphens: auto;
+}
+.card a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    hyphens: auto;
+}
+.card a:hover {
+    color: #555;
+    border-bottom: 1px solid #555;
+}
+h3 {
+    color: white;
+    font-family: "Inria Serif", serif;
+    font-size: 5vh;
+    padding-bottom: 2vh;
+    hyphens: auto;
+    margin: 0;
+}
+.card p img {
+    width: 70%;
+    height: 30vh; 
+    display: block;
+    margin: 0 auto;
+    color: white;
+}
+
+@media (max-width: 1050px) {
+    .outer-container {
+        width: 100%;
     }
     .card {
-        margin: 10px;
-        padding: 50px;
-        background-color: #d3c6b7;
-        border-radius: 10px;
-        text-align: center;
-        color: white;
-        min-width: 50vw ;
-        min-height: 50vh;
-        justify-content: space-between;
-        hyphens: auto;
-    }
-    .card h2, .card p {
-        margin: 10px 0;
-        color: white;
-        hyphens: auto;
-    }
-    .card a {
-        color: white;
-        text-decoration: none;
-        border-bottom: 1px solid white;
-        hyphens: auto;
-    }
-    .card a:hover {
-        color: #555;
-        border-bottom: 1px solid #555;
-    }
-    h3 {
-        color: white;
-        font-family: "Inria Serif", serif;
-        font-size: 5vh;
-        padding-bottom: 2vh;
-        hyphens: auto;
+        height: 100%;
     }
     .card p img {
-        width: 70%;
-        height: 30vh; 
-        display: block;
-        margin: 0 auto;
-        color: white;
+        height: 20vh;
     }
-    @media (max-width: 1050px) {
-        .outer-container {
-            width: 100%;
-        }
-        .card {
-            height: 100%;
-        }
-        .card p img {
-            height: 20vh;
-        }
+}
+@media (min-width: 1050px) {
+    .outer-container {
+        display: none;
     }
-    @media (min-width: 1050px) {
-        .outer-container {
-            display: none;
-        }
-    }
+}
+
 </style>
