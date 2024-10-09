@@ -24,16 +24,20 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				margin-top: -2%;
 			}
 			.hero-image {
-				width: 100%;
+    			height: 700px; /* Set desired height */
 			}
+
 			.hero-image img {
 				display: block;
 				margin: 0 auto;
 				border-radius: 12px;
-				box-shadow:  20px 10px 20px 10px var(--box-shadow);
+				box-shadow: 20px 10px 20px 10px var(--box-shadow);
+				width: 55%; /* Ensure it fills the width */
+				height: 100%; /* Force the image to match the container height */
+				object-fit: cover; /* Ensure the image maintains its visual proportions */
 			}
 			.prose {
-				width: 720px;
+				width: 55%;
 				max-width: calc(100% - 2em);
 				margin: auto;
 				padding: 1em;
@@ -44,7 +48,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				text-align: center;
 				line-height: 1;
 				font-family: "Inria Serif", serif;
-				font-size: 2vw;
+				font-size: 1.5vw;
 				font-weight: 200;
 			}
 			@media (max-width: 720px) {
