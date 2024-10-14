@@ -2,7 +2,7 @@
 title: 'Laboruntersuchungen'
 description: 'Vorsorge für Ihr Wohl'
 pubDate: 'Jul 06 2000'
-heroImage: '/Labor.JPG'
+heroImage: '/LaborDagmar.JPG'
 ---
 ### Ein wichtiger Bestandteil der gynäkologischen Diagnostik
 

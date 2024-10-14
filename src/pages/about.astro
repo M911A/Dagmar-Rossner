@@ -6,7 +6,7 @@ import Layout from '../layouts/BlogPost.astro';
 	title="Über mich"
 	description="Lorem ipsum dolor sit amet"
 	pubDate={new Date('August 08 2021')}
-	heroImage="/schwnagerschaft.AVIF"
+	heroImage="/AboutDagmar.JPG"
 >
 	<p>
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -17,18 +17,19 @@ import Layout from '../layouts/BlogPost.astro';
 		vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque
 		sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
 	</p>
-	<img alt="Bild" src="/emsella.webp">
 	<p>
-		Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non
-		tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non
-		blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna
-		porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis
-		massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
-		Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis
-		bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra
-		massa massa ultricies mi.
+			Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non
+			tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non
+			blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna
+			porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis
+			massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
+			Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis
+			bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra
+			massa massa ultricies mi.
 	</p>
-
+	<div class="portriat">
+		<img class="portrait-img" alt="Bild" src="/PortraitDagmar.JPG">
+	</div>
 	<p>
 		Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl
 		suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet
@@ -60,3 +61,20 @@ import Layout from '../layouts/BlogPost.astro';
 		proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
 	</p>
 </Layout>
+
+
+<style>
+ .portriat {
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+ }
+ .portrait-img {
+	 height: 500px !important;
+ }
+ @media screen and (max-width: 1024px) {
+	 .portrait-img {
+		 height: 400px !important;
+	 }
+ }
+</style>

@@ -2,7 +2,7 @@
 title: 'Beckenbodentraining'
 description: 'Vorsorge für Ihr Wohl'
 pubDate: 'Jul 09 2000'
-heroImage: '/Emsella.png'
+heroImage: '/emsella.webp'
 ---
 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column">
   <p>

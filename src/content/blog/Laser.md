@@ -20,6 +20,8 @@ Die MonaLisa Touch-Behandlung kann bei einer Vielzahl von Beschwerden eingesetzt
 
 - **Schmerzen während des Geschlechtsverkehrs**: Die MonaLisa Touch-Behandlung kann helfen, Schmerzen zu reduzieren und das sexuelle Wohlbefinden zu steigern.
 
+![Laser](/LaserScreen.JPG)
+
 #### Vorteile der MonaLisa Touch-Behandlung
 
 - **Schonendes Verfahren**: Die Behandlung ist minimalinvasiv und erfordert in der Regel keine Narkose. Viele Frauen berichten von einem nur geringen Unbehagen während des Eingriffs.
@@ -27,6 +29,8 @@ Die MonaLisa Touch-Behandlung kann bei einer Vielzahl von Beschwerden eingesetzt
 - **Schnelle Genesung**: Die Erholungszeit ist kurz, und die meisten Frauen können ihre normalen Aktivitäten sofort nach der Behandlung wieder aufnehmen.
 
 - **Nachhaltige Ergebnisse**: Viele Patientinnen berichten von einer signifikanten Verbesserung ihrer Symptome nach nur wenigen Sitzungen, und die Ergebnisse können mehrere Monate oder sogar Jahre anhalten.
+
+![Laser](/LaserInAction.JPG)
 
 #### Der Ablauf einer MonaLisa Touch-Behandlung
 
