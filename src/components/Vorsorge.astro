@@ -13,14 +13,20 @@
             </div>
         </div>
     </div>
-
     <div class="right">
-        <img alt="Bild Vorsorge" src="/Vorsorge.webp">
+        <img class="vorsorgeImg" alt="Bild Vorsorge" src="/VorsorgeLanding4.JPG">
     </div>
 </div>
 
-
 <style>
+    .vorsorgeImg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom; /* Bild wird unten ausgerichtet, überschüssiger Teil wird oben abgeschnitten */
+        border-radius: 0;
+        overflow: hidden;
+    }
 
     .header-serif-mobile {
         display: none;
@@ -29,21 +35,23 @@
     .container {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch; /* Sorgt dafür, dass beide Seiten die gleiche Höhe haben */
+        height: auto; /* Automatische Höhe, passt sich an den Inhalt an */
     }
 
     .left {
         width: 60%;
         background-color: var(--accent);
         display: flex;
-        height: 100%;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .left .text-background {
         background-color: white;
         width: 95%;
-        margin-top: 5%;
-        height: 90%;
-        margin-bottom: 5%;
+        margin: 5% 0;
     }
 
     .text-padding {
@@ -57,21 +65,15 @@
     .right {
         width: 40%;
         background-color: var(--accent);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; /* Stellt sicher, dass das Bild vertikal gestreckt wird */
         overflow: hidden;
     }
 
-    .right img {
-        width: auto;
-        object-fit: contain;
-        border-radius: 0;
-        overflow: hidden;
-
-    }
-
-    @media (max-width: 720px) {
+    @media (max-width: 820px) {
         .container {
             width: 100%;
-            display: flex;
             flex-direction: column;
         }
         .header-serif {
@@ -82,26 +84,29 @@
         }
         .left {
             width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .right {
             width: 100%;
+            img {
+                padding: 2%;
+            }
+            background-color: white;
         }
         .text-background {
-            height: 95% !important;
-            width: 90% !important;
-            display: flex;
-            margin: 5%;
-            border-radius: 0px !important;
-
+            padding: 0 !important;
         }
     }
+
     @media (min-width: 720px) {
         .right img {
-            width: auto;
+            width: 100%;
             height: 100%;
             object-fit: cover;
+            object-position: bottom;
             border-radius: 0;
-
         }
     }
 </style>
