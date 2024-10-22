@@ -6,11 +6,29 @@ heroImage: '/Ultraschall.JPG'
 ---
 ### Ein wichtiger Bestandteil der gynäkologischen Diagnostik
 
-Ultraschalluntersuchungen sind eine bewährte und schmerzfreie Methode zur Beurteilung der Gesundheit der weiblichen Geschlechtsorgane. In der gynäkologischen Praxis spielen sie eine entscheidende Rolle bei der Früherkennung und Diagnose verschiedener Erkrankungen. Diese Untersuchungen bieten nicht nur wertvolle Informationen über den Zustand der Gebärmutter und der Eierstöcke, sondern sind auch ein wesentlicher Bestandteil der Schwangerschaftsvorsorge.
+Ultraschalluntersuchungen sind eine bewährte und schmerzfreie Methode zur Beurteilung der Gesundheit der 
+weiblichen Geschlechtsorgane. In der gynäkologischen Praxis spielen sie eine entscheidende Rolle bei der 
+Früherkennung und Diagnose verschiedener Erkrankungen. Diese Untersuchungen bieten nicht nur wertvolle 
+Informationen über den Zustand der Gebärmutter und der Eierstöcke, sondern sind auch ein wesentlicher 
+Bestandteil der Schwangerschaftsvorsorge.
 
 #### Was ist eine Ultraschalluntersuchung?
 
-Die Ultraschalluntersuchung, auch Sonografie genannt, nutzt hochfrequente Schallwellen, um Bilder der inneren Organe zu erzeugen. Diese Methode ist nicht invasiv, ohne Strahlenbelastung und ermöglicht es uns, detaillierte Informationen über die Anatomie und Funktion der Geschlechtsorgane zu erhalten.
+<div class="video-split">
+    <div class="text">
+        <p>
+            Die Ultraschalluntersuchung, auch Sonografie genannt, nutzt hochfrequente Schallwellen, um Bilder der inneren 
+            Organe zu erzeugen. Diese Methode ist nicht invasiv, ohne Strahlenbelastung und ermöglicht es uns, detaillierte 
+            Informationen über die Anatomie und Funktion der Geschlechtsorgane zu erhalten.
+        </p>
+    </div>
+    <div class="video">
+        <video controls>
+            <source src="/Video/Ultraschall.mp4" type="video/mp4">
+            Dein Browser unterstützt dieses Video-Format nicht.
+        </video>
+    </div>
+</div>
 
 #### Anwendungsbereiche der Ultraschalluntersuchung in der Gynäkologie
 
@@ -55,3 +73,45 @@ Nutzen Sie die Vorteile der Ultraschalluntersuchung zur Früherkennung und Über
     </a>
   </p>
 </div>
+
+<style>
+	.video-split {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+	}
+	.video {
+		display: flex;
+		justify-content: center;
+        align-items: center;
+		width: 40%;
+		padding-left: 20px;
+		padding-right: 20px;
+        padding-bottom: 50px;
+		video {
+			width: 100%;
+		}
+
+	}
+	.text {
+		display: flex;
+		text-align: justify;
+		width: 60%;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+    @media screen and (max-width: 1000px) {
+        .video-split {
+            display: flex;
+            flex-direction: column;
+        }
+        .text, .video {
+            width: 100%;
+            padding: 0;
+        }
+        .video {
+            padding-bottom: 50px;
+        }
+    }
+</style>

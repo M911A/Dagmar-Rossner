@@ -38,4 +38,47 @@ import Map from '../components/Map.astro';
 		<Emsella2 />
 		<Footer />
 	</body>
+	<body>
+	<div class="video-split">
+		<div class="text">
+			#### Warum ist die gynäkologische Vorsorge wichtig?
+
+			Die regelmäßige Vorsorgeuntersuchung dient nicht nur der Früherkennung von Krebserkrankungen, wie Gebärmutterhalskrebs, Eierstockkrebs oder Brustkrebs, sondern auch der Überprüfung Ihrer allgemeinen gynäkologischen Gesundheit. Viele gynäkologische Erkrankungen verlaufen zunächst symptomlos und können erst durch eine gründliche Untersuchung erkannt werden. Je früher eine Erkrankung festgestellt wird, desto besser sind die Behandlungsmöglichkeiten und Heilungschancen.
+
+		</div>
+		<div class="video">
+			<video controls>
+				<source src="/public/Video/ImpfungenSpritzen.mp4" type="video/mp4">
+				Dein Browser unterstützt dieses Video-Format nicht.
+			</video>
+		</div>
+	</div>
+	</body>
 </html>
+
+<style>
+	.video-split {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+	}
+	.video {
+		display: flex;
+		justify-content: center;
+		width: 30%;
+		padding-left: 20px;
+		padding-right: 20px;
+		video {
+			width: 100%;
+		}
+
+	}
+	.text {
+		display: flex;
+		text-align: justify;
+		width: 70%;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+</style>

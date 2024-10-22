@@ -45,13 +45,24 @@ Zur Behandlung der Beschwerden und Stärkung der Kontinenz und des Beckenbodens 
 
 Bei der Behandlung der Inkontinenz wird fokussierte Energie verwendet, um den Beckenboden zu trainieren, indem elektromagnetische Wellen durch den Unterleib geschickt werden. Dies führt zu effektiven Muskelkontraktionen. Das daraus resultierende Ergebnis ist eine vollständige Beckenboden Muskelstimulation, die mit herkömmlichem Training, wie beispielsweise maximalen Kegelübungen, nicht erreichbar wäre.
 
-Es gibt mehrere signifikante Vorteile, die sich daraus ergeben:
-
-- Besserer Schutz der inneren Organe
-- Linderung bei Belastungsinkontinenz und Stressinkontinenz
-- Stärkung des unteren Rückens und der Bauchmuskulatur
-- Milderung von Schmerzen
-- Verbesserung der Beschwerden beim Geschlechtsverkehr
+<div class="video-split">
+    <div class="text">
+        <p>Es gibt mehrere signifikante Vorteile, die sich daraus ergeben:</p>
+        <ul>
+            <li>Besserer Schutz der inneren Organe</li>
+            <li>Linderung bei Belastungsinkontinenz und Stressinkontinenz</li>
+            <li>Stärkung des unteren Rückens und der Bauchmuskulatur</li>
+            <li>Milderung von Schmerzen</li>
+            <li>Verbesserung der Beschwerden beim Geschlechtsverkehr</li>
+        </ul>
+    </div>
+    <div class="video">
+        <video controls>
+            <source src="/Video/Emsella.mp4" type="video/mp4">
+            Dein Browser unterstützt dieses Video-Format nicht.
+        </video>
+    </div>
+</div>
 
 ### Ablauf der Behandlung mit dem EMSELLA Stuhl
 
@@ -73,3 +84,65 @@ Es gibt mehrere signifikante Vorteile, die sich daraus ergeben:
     </a>
   </p>
 </div>
+
+<style>
+	.video-split {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+        margin-top: -30px;
+	}
+	.video {
+		display: flex;
+		justify-content: center;
+        align-items: center;
+		width: 40%;
+		padding-left: 20px;
+		padding-right: 20px;
+        padding-bottom: 50px;
+		video {
+			width: 100%;
+		}
+
+	}
+	.text {
+		display: flex;
+        flex-direction: column;
+		width: 60%;
+		padding-right: 20px;
+        p {
+            margin-top: -20px;
+        }
+        ul {
+            margin-top: -50px !important;
+            padding-top: 0px !important;
+        }
+	}
+
+    @media screen and (max-width: 1000px) {
+        .video-split {
+            display: flex;
+            flex-direction: column;
+            margin: 0 !important;
+        }
+        .text {
+            width: 100%;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+        .text {
+            ul {
+                margin: 0 !important;
+            }
+            p {
+                margin: 0 !important;
+            }
+        }
+        .video {
+            width: 100%;
+            padding-left: 0 !important;
+            padding-bottom: 50px;
+            margin-top: 20px;
+        }
+    }
+</style>
