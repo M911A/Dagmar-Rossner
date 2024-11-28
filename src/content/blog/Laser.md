@@ -63,15 +63,6 @@ Die MonaLisa Touch-Behandlung ist eine sichere und effektive Option zur Verbesse
 
 Wenn Sie unter vaginalen Beschwerden leiden und nach einer sanften Lösung suchen, zögern Sie nicht, sich an uns zu wenden. Vereinbaren Sie einen Termin in unserer Praxis, um mehr über die MonaLisa Touch-Behandlung zu erfahren und Ihre Lebensqualität zu verbessern!
 
-<div style="display: flex; justify-content: center; align-items: center; flex-direction: column">
-  <p>
-    <a href="/termine">
-      <button style="font-size: 25px; padding: 10px 20px; background-color: #d3c6b7; color: white; border: none; border-radius: 5px; cursor: pointer;">
-        Jetzt Termin vereinbaren
-      </button>
-    </a>
-  </p>
-</div>
 
 <style>
     .video-split {
