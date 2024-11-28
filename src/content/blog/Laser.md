@@ -6,7 +6,20 @@ heroImage: '/laser.webp'
 ---
 ### MonaLisa Touch - Sanfte Lösungen für intime Gesundheitsprobleme
 
-Die Laserbehandlung mit MonaLisa Touch ist ein innovatives und schonendes Verfahren zur Behandlung von vaginalen Veränderungen, die häufig durch hormonelle Veränderungen, insbesondere in der Menopause, verursacht werden. Diese Technologie nutzt einen fraktionierten CO2-Laser, der präzise in das Gewebe eindringt, um die natürliche Heilung und Regeneration zu fördern. Die Behandlung ist nicht invasiv, schmerzarm und bietet viele Vorteile für Frauen, die unter verschiedenen vaginalen Beschwerden leiden.
+<div class="video-split">
+    <div class="text">
+        <p>
+           Die Laserbehandlung mit MonaLisa Touch ist ein innovatives und schonendes Verfahren zur Behandlung von vaginalen Veränderungen, die häufig durch hormonelle Veränderungen, insbesondere in der Menopause, verursacht werden. Diese Technologie nutzt einen fraktionierten CO2-Laser, der präzise in das Gewebe eindringt, um die natürliche Heilung und Regeneration zu fördern. Die Behandlung ist nicht invasiv, schmerzarm und bietet viele Vorteile für Frauen, die unter verschiedenen vaginalen Beschwerden leiden.
+        </p>
+    </div>
+    <div class="video">
+        <video controls>
+            <source src="/Video/Laser.mp4" type="video/mp4">
+            Dein Browser unterstützt dieses Video-Format nicht.
+        </video>
+    </div>
+</div>
+
 
 #### Indikationen für die MonaLisa Touch-Behandlung
 
@@ -49,3 +62,56 @@ Die MonaLisa Touch-Behandlung ist eine sichere und effektive Option zur Verbesse
 ### Vereinbaren Sie Ihren Termin
 
 Wenn Sie unter vaginalen Beschwerden leiden und nach einer sanften Lösung suchen, zögern Sie nicht, sich an uns zu wenden. Vereinbaren Sie einen Termin in unserer Praxis, um mehr über die MonaLisa Touch-Behandlung zu erfahren und Ihre Lebensqualität zu verbessern!
+
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column">
+  <p>
+    <a href="/termine">
+      <button style="font-size: 25px; padding: 10px 20px; background-color: #d3c6b7; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        Jetzt Termin vereinbaren
+      </button>
+    </a>
+  </p>
+</div>
+
+<style>
+    .video-split {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+	}
+	.video {
+		display: flex;
+		justify-content: center;
+        align-items: center;
+		width: 40%;
+        padding-top: 40px;
+		padding-left: 20px;
+		padding-right: 20px;
+        padding-bottom: 50px;
+		video {
+			width: 100%;
+		}
+
+	}
+	.text {
+		display: flex;
+		text-align: justify;
+		width: 60%;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+    @media screen and (max-width: 1000px) {
+        .video-split {
+            display: flex;
+            flex-direction: column;
+        }
+        .text, .video {
+            width: 100%;
+            padding: 0;
+        }
+        .video {
+            padding-bottom: 50px;
+        }
+    }
+</style>
