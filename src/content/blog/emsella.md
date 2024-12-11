@@ -1,5 +1,5 @@
 ---
-title: 'Beckenbodentraining'
+title: 'Emsella - Beckenbodentraining'
 description: 'Vorsorge für Ihr Wohl'
 pubDate: 'Jul 09 2000'
 heroImage: '/emsella.webp'
@@ -62,6 +62,20 @@ Bei der Behandlung der Inkontinenz wird fokussierte Energie verwendet, um den Be
             Dein Browser unterstützt dieses Video-Format nicht.
         </video>
     </div>
+</div>
+
+## Nur zu Testzwecken
+<div>
+  <img src="/BannerArtikel.png" alt="Banner vom Artikel zu Emsella">
+</div>
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column">
+  <p>
+    <a href="/Aritkel.pdf" download="Artikel über Emsella">
+      <button style="font-size: 20px; padding: 10px 20px; background-color: #d3c6b7; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        Zum Artikel
+      </button>
+    </a>
+  </p>
 </div>
 
 ### Ablauf der Behandlung mit dem EMSELLA Stuhl
